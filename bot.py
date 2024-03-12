@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import spacy
@@ -92,5 +93,5 @@ async def youtube_qna(ctx,url,question):
 
 
 # ----------------------------------------------------------------------------------------------------
-bot.run(TOKEN)
+bot.run(os.environ['token'])
 # ----------------------------------------------------------------------------------------------------
